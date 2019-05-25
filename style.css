@@ -13,3 +13,98 @@ Text Domain: wpprofilescom
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END reset */
+:root {
+	--main-bg-color: #5AB8E1;
+	--main-text-color: white;
+	--main-border-color: white;
+  }
+
+
+body, html {
+	height: 100%;
+	display: grid;
+	background-color: var(--main-bg-color);
+}
+
+.centre-hv {
+	margin: auto;
+}
+
+.box {
+	border: 1px solid var(--main-border-color);
+	padding: 3rem;
+}
+
+.box.heavy {
+	border-width: 1rem;
+}
+
+/* Coming 2020 specific */
+.coming-soon {
+	width: 50%;
+	max-width: 40rem;
+}
+
+h1 {
+	font-family: 'Roboto', Sans-Serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+	font-weight: 900;
+	color: var(--main-text-color)
+}
+
+p {
+	font-family: 'Roboto', Sans-Serif;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	font-weight: 300;
+	color: var(--main-text-color)
+}
